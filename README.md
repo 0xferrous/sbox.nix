@@ -18,6 +18,12 @@ Use the latest unstable nixpkgs:
 
 `nix run github:shazow/kiosk.nix#chromium --override-input nixpkgs github:NixOS/nixpkgs/nixpkgs-unstable`
 
+## TODO
+
+- [ ] Make it into a library so people can `mkKiosk { program, settings, ... }` easily in their own flakes.
+- [ ] Add `qemuGuest` and other quality of life features?
+- [ ] Example for kiosk'ing a specific website, for people who actually want to kiosk rather than isolate an app for experimentation.
+
 ## License
 
 MIT
