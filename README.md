@@ -2,6 +2,8 @@
 
 Run any nixpkgs graphical app in a QEMU virtual machine in kiosk mode (single, maximized application).
 
+Sometimes you need a fresh isolated instance of a graphical app to do something zany in a safe and fun way, kiosk.nix is here for it.
+
 ## Examples
 
 Run an app in nixpkgs, like chromium:
