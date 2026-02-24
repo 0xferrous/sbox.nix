@@ -1,6 +1,6 @@
 # kiosk.nix
 
-Run any nixpkgs app in a QEMU virtual machine in kiosk mode.
+Run any nixpkgs app in a QEMU virtual machine in kiosk mode (single, maximized application).
 
 ## Examples
 
