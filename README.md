@@ -8,7 +8,7 @@ Sometimes you need a fresh isolated instance of an app to do something zany in a
 
 Run an app in nixpkgs via the dynamic `sbox` CLI (resolves a binary via nix-index-database and runs it in the VM):
 
-`nix run github:shazow/sbox.nix#sbox -- chromium --incognito`
+`nix run github:0xferrous/sbox.nix#sbox -- chromium --incognito`
 
 Mode selection:
 
@@ -62,19 +62,19 @@ CLI examples:
 
 Examples:
 
-`nix run github:shazow/sbox.nix#sbox -- --mode cli jq -- --version`
+`nix run github:0xferrous/sbox.nix#sbox -- --mode cli jq -- --version`
 
-`nix run github:shazow/sbox.nix#sbox -- --mem 8192 --vcpu 4 chromium --incognito`
+`nix run github:0xferrous/sbox.nix#sbox -- --mem 8192 --vcpu 4 chromium --incognito`
 
-`nix run github:shazow/sbox.nix#sbox -- --dry-run chromium --incognito`
+`nix run github:0xferrous/sbox.nix#sbox -- --dry-run chromium --incognito`
 
 Override nixpkgs to use my local nixpkgs, rather than sbox.nix's possibly outdated flake.lock:
 
-`nix run github:shazow/sbox.nix#sbox --override-input nixpkgs nixpkgs -- chromium`
+`nix run github:0xferrous/sbox.nix#sbox --override-input nixpkgs nixpkgs -- chromium`
 
 Use the latest unstable nixpkgs:
 
-`nix run github:shazow/sbox.nix#sbox --override-input nixpkgs github:NixOS/nixpkgs/nixpkgs-unstable -- chromium`
+`nix run github:0xferrous/sbox.nix#sbox --override-input nixpkgs github:NixOS/nixpkgs/nixpkgs-unstable -- chromium`
 
 ## TODO
 
